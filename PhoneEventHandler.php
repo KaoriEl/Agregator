@@ -70,18 +70,6 @@ class PhoneEventHandler extends \danog\MadelineProto\EventHandler
     public function pipeLines($update)
     {
         global $cid;
-
-//        if (!file_exists('madeline.php')) {
-//            copy('https://phar.madelineproto.xyz/madeline.php', 'madeline.php');
-//        }
-//        include 'madeline.php';
-
-//        $MadelineProto = new \danog\MadelineProto\API('session.madeline');
-//        $MadelineProto->start();
-
-//        die();
-//        print_r($cid);
-
         $message = $update['message'];
 
         ob_start();
